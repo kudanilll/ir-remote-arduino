@@ -1,0 +1,41 @@
+plugins {
+	id 'com.android.application'
+}
+
+android {
+	namespace 'com.achmaddaniel.irremotearduino'
+	compileSdk 34
+	buildToolsVersion "34.0.0"
+	
+	defaultConfig {
+		applicationId "com.achmaddaniel.irremotearduino"
+		minSdk 29
+		targetSdk 34
+		versionCode 1
+		versionName "1.0"
+	}
+	
+	buildTypes {
+		release {
+			minifyEnabled true
+			shrinkResources true
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+		}
+	}
+	
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_11
+		targetCompatibility JavaVersion.VERSION_11
+	}
+	
+	buildFeatures {
+		viewBinding true
+		buildConfig true
+	}
+}
+
+dependencies {
+	implementation 'androidx.appcompat:appcompat:1.6.1'
+	implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+	implementation 'com.google.android.material:material:1.10.0'
+}

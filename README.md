@@ -4,11 +4,10 @@ just simple app to control arduino (using ir receiver).
 
 ## Sketch
 
-| Components  | Arduino Pins    |
-|-------------|-----------------|
-| LED (+)     | PIN 13          |
-| LED (-)     | GND             |
-| IR RECEIVER | PIN 12, GND, 5V |
+|  Component  |     Arduino Pin     |
+|-------------|---------------------|
+| LED         | PIN 13 (+), GND (-) |
+| IR RECEIVER | PIN 12, GND, 5V     |
 
 ## Support
 

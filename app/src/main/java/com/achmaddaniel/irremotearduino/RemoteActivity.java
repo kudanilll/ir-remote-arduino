@@ -42,7 +42,7 @@ public class RemoteActivity extends AppCompatActivity {
 				vibrator.vibrate(60);
 				consumer.transmit(37000, pattern);
 			} else
-				Toast.makeText(this, "This device does not have 'IR SERVICE'", Toast.LENGTH_SHORT).show();
+				Toast.makeText(RemoteActivity.this, "This device does not have 'IR SERVICE'", Toast.LENGTH_SHORT).show();
 		});
 	}
 	
